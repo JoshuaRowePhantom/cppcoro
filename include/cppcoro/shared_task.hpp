@@ -74,7 +74,7 @@ namespace cppcoro
 		public:
 
 			shared_task_promise_base() noexcept
-				: m_refCount(1)
+				: m_refCount(2)
 				, m_waiters(&this->m_waiters)				
 				, m_exception(nullptr)
 			{}
